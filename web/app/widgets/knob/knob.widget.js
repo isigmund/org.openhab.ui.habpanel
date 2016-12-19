@@ -123,22 +123,16 @@
         if ( vm.widget.rangesEnabled) {
           vm.widget.ranges.forEach(function(rangeItem) {
               if (rangeItem.min != 0 || rangeItem.max != 0) {
-                  console.log("Matching:" + vm.widget.rangesTextColorMatching);
+                  var textColor = vm.widget.textColor;
                   if (vm.widget.rangesTextColorMatching == true) {
-                       vm.knob.options.ranges.push({
-                          min: rangeItem.min,
-                          max: rangeItem.max,
-                          barColor: rangeItem.barColor,
-                          textColor: rangeItem.barColor
-                      })
-                  } else {
-                      vm.knob.options.ranges.push({
-                          min: rangeItem.min,
-                          max: rangeItem.max,
-                          barColor: rangeItem.barColor,
-                          textColor: vm.widget.textColor
-                      })
+                    textColor = rangeItem.barColor;
                   }
+                  vm.knob.options.ranges.push({
+                      min: rangeItem.min,
+                      max: rangeItem.max,
+                      barColor: rangeItem.barColor,
+                      textColor: textColor
+                  })
               }
           });
         }

@@ -20,3 +20,64 @@
     margin: auto;
 }
 
+/* new theme */
+.widget-clock.blue-light .clock-face {
+  stroke: #153b6f;
+  fill: #0e2434;
+}
+.widget-clock.blue-light .minor {
+  stroke: #0089ff;
+  stroke-width: 0.5;
+}
+.widget-clock.blue-light .major {
+  stroke: rgba(119, 176, 242, 0.97);
+  stroke-width: 0.5;
+}
+.widget-clock.blue-light .hour {
+  stroke: rgba(119, 176, 242, 0.97);
+  stroke-width: 1;
+}
+.widget-clock.blue-light .minute {
+  stroke: #0089ff;
+  stroke-width: 0.75;
+}
+.widget-clock.blue-light .second,
+.widget-clock.blue-light .second-counterweight {
+  stroke: rgb(234, 31, 54);
+  stroke-width: 0.5;
+}
+.widget-clock.blue-light .second-counterweight {
+  stroke-width: 1.5;
+}
+
+
+
+/* new theme */
+.widget-clock.skinny-white .clock-face {
+  stroke: #0e2434;
+  fill: #0e2434;
+}
+.widget-clock.skinny-white .minor {
+  stroke: #ffffff;
+  stroke-width: 0.5;
+}
+.widget-clock.skinny-white .major {
+  stroke: #ffffff;
+  stroke-width: 0.5;
+}
+.widget-clock.skinny-white .hour {
+  stroke: #ffffff;
+  stroke-width: 1;
+}
+.widget-clock.skinny-white .minute {
+  stroke: #ffffff;
+  stroke-width: 0.75;
+}
+.widget-clock.skinny-white .second {
+  stroke: #ffffff;
+  stroke-width: 0.5;
+}
+.widget-clock.skinny-white .second-counterweight {
+  stroke: #ffffff;
+  stroke-width: 0.0;
+}
